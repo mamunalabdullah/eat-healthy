@@ -64,3 +64,33 @@ h3{
 .aboutImg img{
     width: 40%;
 }
+
+.heading{
+    text-align: center;
+    justify-content: center;
+}
+
+.heading h3{
+    color: #707070;
+    font-size: 40px;
+}
+.heading p{
+    font-size: 18px;
+}
+.recipies{
+    padding: 5%;
+}
+.items{
+    display: flex;
+    justify-content: space-around;
+}
+.item{
+    width: 30%;
+    padding: 10px;
+    box-shadow: 2px 2px 10px #FB9049;
+    border-radius: 15px;
+}
+.title, .description{
+    font-size: 18px;
+    margin-top: 20px;
+}
