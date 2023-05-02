@@ -48,3 +48,19 @@ p{
 .image{
     width: 50%;
 }
+
+
+h3{
+    color: #707070;
+    font-size: 40px;
+}
+
+.about{
+    background-image: url(images/shapes/7.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.aboutImg img{
+    width: 40%;
+}
