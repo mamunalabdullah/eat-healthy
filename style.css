@@ -1,29 +1,36 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 img{
     display: block;
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
-body{
-    font-family: 'Montserrat', sans-serif;
-font-family: 'Poppins', sans-serif;
+.section-title{
+    color: #707070;
+    font-size: 40px;
 }
+
+/* banner styles */
 .banner{
+    height: 80vh;
     display: flex;
-    padding: 5%;
+    justify-content: space-around;
+    align-items: center;
     background-image: url(images/shapes/Frame\ 56.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 5%;
+
 }
-.text{
-    width: 35%;
-    margin-top: 80px;
-    
+.banner-text{
+    width: 30%;   
 }
-h1{
+.banner-title{
     color: #575757;
     font-size: 60px;
 }
@@ -33,7 +40,7 @@ h1{
 p{
     font-size: 20px;
     color: #828282;
-    margin: 30px 0;
+    margin: 40px 0;
 }
 .orderBtn{
     font-size: 18px;
@@ -45,42 +52,49 @@ p{
     box-shadow: 2px 2px 10px #FB9049;
 
 }
-.image{
+.banner-image{
     width: 50%;
 }
 
-
-h3{
-    color: #707070;
-    font-size: 40px;
-}
-
+/* about section styles */
 .about{
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-image: url(images/shapes/7.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    padding-top: 5%;
 }
-.aboutImg img{
-    width: 40%;
+.about-image{
+    width: 25%;
+}
+.about-text{
+    width: 30%;
+}
+.about-description{
+    margin-bottom: 50px;
 }
 
+/* recipies section */
+.recipies{
+    padding: 5%;
+    width: 80%;
+    margin: 0 auto;
+}
 .heading{
     text-align: center;
     justify-content: center;
 }
 
-.heading h3{
+.heading-title{
     color: #707070;
     font-size: 40px;
 }
-.heading p{
+.heading-description{
     font-size: 18px;
-}
-.recipies{
-    padding: 5%;
-    width: 80%;
-    margin: 0 auto;
 }
 .items{
     display: flex;
@@ -88,16 +102,18 @@ h3{
 }
 .item{
     width: 30%;
-    padding: 10px;
+    gap: 35px;
+    padding: 15px;
     box-shadow: 2px 2px 10px #FB9049;
     border-radius: 15px;
 }
-.title, .description{
+.item-title, .item-description{
     font-size: 18px;
     margin-top: 20px;
 }
 
 .counter{
+    border-radius: 15px;
     display: flex;
     justify-content: space-around;
     box-shadow: 2px 2px 10px #FB9049;
@@ -105,11 +121,11 @@ h3{
     text-align: center;
     padding: 2%;
 }
-.counter h3{
+.counter-title{
     font-size: 30px;
     color: #111;
 }
-.counter p{
+.counter-description{
     font-size: 14px;
 }
 
@@ -120,4 +136,92 @@ footer{
 }
 footer h3{
     font-size: 30px;
+    color: #fff;
+}
+
+.hide{
+    display: none;
+}
+
+
+@media screen and (max-width: 576px) {
+    .banner{
+        flex-direction: column-reverse;
+        padding: 5%;
+        height: auto;
+    }
+    .banner-text, .about-text{
+        width: 70%;
+        margin: 20px 0;   
+    }
+    .banner-title{
+        font-size: 25px;
+    }
+    .banner-description{
+        font-size: 10px;
+        margin: 20px 0;
+    }
+    .orderBtn{
+        font-size: 10px;
+        padding: 12px 15px; 
+    }
+    .about{
+        flex-direction: column;
+        padding: 5% 0;
+    }
+    .section-title{
+        font-size: 20px;
+    }
+    .section-description{
+        font-size: 15px;
+    }
+    .heading-title{
+        font-size: 20px;
+    }
+    .heading-description{
+        font-size: 15px;
+    }
+    .items{
+        flex-direction: column;
+    }
+    .item{
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .counter-title{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .banner{
+        height: auto;
+    }
+    .banner-text, .about-text{
+        width: 35%;
+        margin: 20px 0;   
+    }
+    .banner-title{
+        font-size: 30px;
+    }
+    p{
+        font-size: 15px;
+        margin: 20px 0;
+    }
+    .orderBtn{
+        font-size: 10px;
+        padding: 12px 15px;
+    }
+    .section-title{
+        font-size: 20px;
+    }
+    .items{
+        flex-direction: column;
+    }
+    .item{
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
 }
